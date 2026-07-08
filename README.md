@@ -1,38 +1,36 @@
 # Project: Mobile Game Analytics
 
-## О проекте
+## Overview
 
-В этом репозитории представлен итоговый учебный проект по продуктовой аналитике на данных мобильной игры.  
-Проект включает три практические задачи: расчёт retention, анализ результатов A/B‑теста акционных предложений и подбор метрик для оценки игрового события.
+This repository contains a complete analytics project based on data from a mobile game.  
+The project focuses on three key tasks: calculating user retention, analyzing an A/B test of promotional offers, and designing metrics to evaluate an in-game themed event.
 
-Цель проекта — показать полный аналитический цикл: загрузку и подготовку данных, расчёт продуктовых метрик, применение статистических методов и интерпретацию результатов с точки зрения бизнеса.
+The goal is to demonstrate a full analytical workflow: data loading and preparation, metric calculation, application of statistical methods, and business-oriented interpretation of results.
 
-## Задачи проекта
+## Project tasks
 
-В рамках проекта решаются следующие задачи:
+1. **Retention calculation**  
+   A Python function was implemented to calculate player retention by days since registration.
 
-1. **Расчёт retention**  
-   Реализована функция на Python для расчёта retention игроков по дням от даты регистрации.
+2. **A/B test analysis**  
+   Two sets of promotional offers were compared to determine the more effective option based on product and statistical metrics.
 
-2. **Анализ A/B‑теста**  
-   Проведено сравнение двух наборов акционных предложений и определение наиболее эффективного варианта на основе продуктовых и статистических метрик.
+3. **Event metrics design**  
+   Metrics were proposed to evaluate the results of the latest themed event in the game.
 
-3. **Подбор метрик для игрового события**  
-   Предложены метрики для оценки результатов последнего тематического события в игре.
+## Data
 
-## Данные
+The project uses datasets described in the notebook:
 
-В проекте используются данные, описанные в ноутбуке:
+- `problem1-reg_data.csv` — user registration timestamps.
+- `problem1-auth_data.csv` — user login timestamps.
+- A/B test data with user group assignment and revenue.
 
-- `problem1-reg_data.csv` — данные о времени регистрации пользователей;
-- `problem1-auth_data.csv` — данные о времени входа пользователей в игру;
-- данные A/B‑теста с распределением пользователей по группам и выручкой.
+These datasets are used to analyze user behavior, retention, monetization, and the impact of product experiments.
 
-Эти данные используются для анализа пользовательского поведения, удержания, монетизации и результатов продуктовых экспериментов.
+## Tech stack
 
-## Используемые инструменты
-
-Проект выполнен на Python с использованием библиотек:
+The project is implemented in Python with the following libraries:
 
 - `pandas`
 - `NumPy`
@@ -40,35 +38,46 @@
 - `SciPy`
 - `Pingouin`
 
-## Применённые методы
+## Approach (workflow)
 
-В проекте использованы следующие аналитические подходы:
+At a high level, the work was structured in the following steps:
 
-- расчёт retention по дням жизни пользователя;
-- исследовательский анализ данных;
-- анализ продуктовых метрик;
-- статистическая проверка различий между группами;
-- интерпретация результатов A/B‑теста;
-- формирование набора метрик для оценки игрового события.
+1. **Data loading and preprocessing**  
+   Imported registration and login datasets, aligned timestamp formats, and prepared user-level activity tables.
 
-## Какие навыки показывает проект
+2. **Retention function implementation**  
+   Built a function that calculates day‑by‑day retention from the registration date, tested it on the full dataset and on samples, and visualized the retention curve.
 
-Этот проект демонстрирует следующие навыки:
+3. **A/B test evaluation**  
+   Aggregated key product metrics by test group, checked statistical assumptions, selected appropriate tests, and evaluated whether differences between groups are statistically significant and practically meaningful.
 
-- расчёт и интерпретация retention;
-- работа с когортной логикой;
-- анализ A/B‑тестов;
-- выбор и интерпретация продуктовых метрик;
-- статистическое мышление;
-- аналитика на Python;
-- визуализация результатов.
+4. **Event metrics design**  
+   Identified meaningful behavioral and monetary indicators for the themed event, defined metric formulas, and outlined how they could be used to monitor event performance.
+
+## Results
+
+By the end of the project:
+
+- A reusable retention calculation function with supporting visualizations was implemented.
+- The A/B test of promotional offers was evaluated with statistically justified conclusions about which variant performs better.
+- A set of metrics for assessing the impact of in‑game events on user behavior and revenue was formulated.
+
+These results can be used as a template for analyzing other mobile games, structuring product experiments, and monitoring event performance.
+
+## Skills demonstrated
+
+The project showcases the following skills:
+
+- calculation and interpretation of retention metrics;
+- working with cohort logic and user lifetimes;
+- analysis of A/B tests;
+- selection and interpretation of product metrics;
+- statistical thinking and hypothesis testing;
+- analytics in Python;
+- visualization of analytical results.
 
 ## Attribution
 
 This project is based on educational assignments from the **"Аналитик данных"** course at [karpov.courses](https://karpov.courses).
 
-В соответствии с п. 2.1.10 Оферты [karpov.courses](https://karpov.courses/terms-of-use) учебные проекты и домашние задания использованы для формирования портфолио при соблюдении условий указания авторства ООО «Карпов Курсы» и размещения ссылки на сайт karpov.courses. В репозитории отсутствует информация, связанная с доступом к базе данных Курса.
-
-## Ссылка на репозиторий
-
-[course-final-project-mobile-game-analytics](https://github.com/RotovVM/course-final-project-mobile-game-analytics)
+В соответствии с п. 2.1.10 Оферты [karpov.courses](https://karpov.courses/terms-of-use) учебные задания использованы для формирования портфолио при соблюдении условий указания авторства ООО «Карпов Курсы» и размещения ссылки на сайт karpov.courses. В репозитории отсутствует информация, связанная с доступом к базе данных Курса.
