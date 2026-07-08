@@ -63,6 +63,12 @@
 - аналитика на Python;
 - визуализация результатов.
 
+## Attribution
+
+This project is based on educational assignments from the **"Аналитик данных"** course at [karpov.courses](https://karpov.courses).
+
+В соответствии с п. 2.1.10 Оферты [karpov.courses](https://karpov.courses/terms-of-use) учебные проекты и домашние задания использованы для формирования портфолио при соблюдении условий указания авторства ООО «Карпов Курсы» и размещения ссылки на сайт karpov.courses. В репозитории отсутствует информация, связанная с доступом к базе данных Курса.
+
 ## Ссылка на репозиторий
 
 [course-final-project-mobile-game-analytics](https://github.com/RotovVM/course-final-project-mobile-game-analytics)
