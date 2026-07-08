@@ -1,4 +1,4 @@
-# Course Final Project: Mobile Game Analytics
+# Project: Mobile Game Analytics
 
 ## О проекте
 
